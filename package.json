@@ -1,0 +1,28 @@
+{
+  "name": "react-leaflet-google-places-searchbox",
+  "version": "0.0.2",
+  "description": "React-Leaflet plugin for Google Places SearchBox, Support for custom menus",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "rimraf lib && babel src --copy-files --source-maps --extensions .es6,.js,.es,.jsx --out-dir lib"
+  },
+  "author": "mingkangshi@126.com",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-import": "^1.6.3",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react-app": "^3.1.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-runtime": "6.26.0",
+    "rimraf": "^3.0.0"
+  },
+  "dependencies": {
+    "react-leaflet": "^1.9.1"
+  }
+}

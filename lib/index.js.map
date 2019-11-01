@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.js"],"names":["AutoSearch","require","module","exports"],"mappings":";;AAAA,IAAMA,aAAaC,QAAQ,cAAR,CAAnB;AACAC,OAAOC,OAAP,GAAiBH,UAAjB","file":"index.js","sourcesContent":["const AutoSearch = require('./AutoSearch');\r\nmodule.exports = AutoSearch;\r\n"]}
