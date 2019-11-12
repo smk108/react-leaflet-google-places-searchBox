@@ -1,10 +1,12 @@
 {
   "name": "react-leaflet-google-places-searchbox",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React-Leaflet plugin for Google Places SearchBox, Support for custom menus",
   "main": "lib/index.js",
   "scripts": {
-    "compile": "rimraf lib && babel src --copy-files --source-maps --extensions .es6,.js,.es,.jsx --out-dir lib"
+    "compile": "rimraf lib && babel src --copy-files --source-maps --extensions .es6,.js,.es,.jsx --out-dir lib",
+    "test": "webpack-dev-server --colors -d -w",
+    "build": "webpack"
   },
   "author": "mingkangshi@126.com",
   "license": "ISC",
@@ -20,9 +22,40 @@
     "babel-preset-react-app": "^3.1.1",
     "babel-preset-stage-1": "^6.24.1",
     "babel-runtime": "6.26.0",
-    "rimraf": "^3.0.0"
+    "class-autobind": "^0.1.4",
+    "clean-webpack-plugin": "^0.1.8",
+    "css-loader": "^0.23.1",
+    "file-loader": "1.1.5",
+    "google-maps": "^3.2.1",
+    "leaflet": "^1.3.1",
+    "html-webpack-plugin": "^2.10.0",
+    "mobx": "^5.5.0",
+    "mobx-react": "^5.2.8",
+    "open": "^7.0.0",
+    "path": "^0.12.7",
+    "postcss-loader": "^0.8.1",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "react-leaflet-google": "^3.3.1",
+    "rimraf": "^3.0.0",
+    "style-loader": "^0.13.0",
+    "webpack": "^3.12.0",
+    "webpack-dev-server": "^2.6.1"
   },
   "dependencies": {
     "react-leaflet": "^1.9.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/smk108/react-leaflet-google-places-searchbox/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/smk108/react-leaflet-google-places-searchbox.git"
+  },
+  "keywords": [
+    "react",
+    "leaflet",
+    "google",
+    "searchbox"
+  ]
 }

@@ -1,0 +1,95 @@
+.menu-info {
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 280px;
+   /* height: 168px;*/
+    display: flex;
+}
+
+.menu-info ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    font: inherit;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+    overflow: visible;
+}
+
+.menu-info li {
+    display: inline-block;
+    text-align: -webkit-match-parent;
+    padding: 0 0 0 6px;
+    width: 46%;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.menu-info .menu-title {
+    height: 48px;
+    background-color: #328cfe;
+}
+
+.menu-info .menu-close {
+    cursor: pointer;
+    float: right;
+    color: #ffffff;
+    margin: 12px;
+}
+
+.menu-info .menu-logo {
+    width: 120px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.menu-info .menu-left {
+    width: 262px;
+   /* height: 200px;*/
+    margin: 8px;
+    outline: none;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.menu-info .menu-setting-list {
+    clear: both;
+    border-bottom: 1px solid #d9d9d9;
+    font-size: 14px;
+    font-weight: 600;
+    width: 96%;
+    margin: auto;
+}
+
+.menu-info a {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.menu-info a:hover {
+    color: #1890ff;
+}
+
+.menu-info .menu-valid {
+    color: #1890ff;
+}
+
+.menu-view-icon img{
+    display: inline-block;
+    width: 24px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+}
+.menu-view-fold{
+    vertical-align: middle;
+    padding-bottom: 2px;
+}
+.menu-view-fold img{
+    width: 24px;
+}

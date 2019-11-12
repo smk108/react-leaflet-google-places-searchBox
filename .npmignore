@@ -1,4 +1,5 @@
 .babelrc
 .idea
 .gitignore
+/dist
 /src

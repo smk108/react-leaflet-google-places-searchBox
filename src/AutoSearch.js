@@ -8,10 +8,10 @@ export default class AutoSearch extends MapControl {
   static propTypes = {};
 
   componentWillMount() {
-    const {handleClickSearchIcon, updateLocation, handleNoLocation} = this.props;
-    this.leafletElement = new window.L.Control.GPlaceAutocomplete({
+    const {handleClickSearchIcon, updateLocation, handleNoLocation, unfoldIcon} = this.props;
+    this.leafletElement = new window.L.Control.GPlaceAutocomplete(Object.assign({...this.props}, {
       clickIcon: handleClickSearchIcon,
-      menuUnfold,
+      menuUnfold: unfoldIcon || menuUnfold,
       callback(place, map) {
         if (!place.geometry) {
           if (handleNoLocation) {
@@ -24,13 +24,12 @@ export default class AutoSearch extends MapControl {
           place.geometry.location.lng()
         ]);
         if (updateLocation) {
-          console.warn('updateLocation', updateLocation);
           updateLocation(
             place.geometry.location.lat(),
             place.geometry.location.lng()
           );
         }
       }
-    });
+    }));
   }
 }

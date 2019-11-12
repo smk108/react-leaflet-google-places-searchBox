@@ -1,0 +1,14 @@
+.solar_legend {
+    position: absolute;
+    bottom: 50px;
+    z-index: 1100;
+    left: 20px;
+}
+
+.custom-popup-style {
+    opacity: 0.8 !important;
+}
+
+.map-icon-click {
+    cursor: pointer;
+}

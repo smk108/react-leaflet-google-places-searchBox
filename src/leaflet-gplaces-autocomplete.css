@@ -20,7 +20,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid transparent;
-    width: calc(~'100% - 50px');
+    width: 190px;
     height: 100%;
     padding: 12px;
     font-size: 14px;
